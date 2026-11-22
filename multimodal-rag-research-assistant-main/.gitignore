@@ -1,0 +1,80 @@
+# Operating System
+.DS_Store
+Thumbs.db
+*.DS_Store
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+**/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# SQLite Database & local storage
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+**/rag_assistant.db
+
+# Vector Index & Embeddings cache (heavy binary files)
+*.bin
+*.index
+*.pkl
+**/faiss_index.bin
+**/bm25_index.pkl
+**/chunks_map.json
+
+# User uploads & heavy multimedia assets (PDFs, Audio, Images)
+*.pdf
+*.wav
+*.mp3
+**/uploads/*.pdf
+**/uploads/*.wav
+**/uploads/*.mp3
+**/uploads/figures/*
+**/uploads/podcasts/*
+**/uploads/rendered_pages/*
+**/uploads/data/*
+
+# Preserve empty directory structure
+!**/uploads/.gitkeep
+!**/uploads/figures/.gitkeep
+!**/uploads/podcasts/.gitkeep
+!**/uploads/rendered_pages/.gitkeep
+!**/data/.gitkeep
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
